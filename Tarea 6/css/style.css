@@ -1,0 +1,27 @@
+.col{
+    height: 100px;
+    cursor: pointer;
+}
+
+.color{
+    height: 225px;
+}
+
+.escudo{
+    background: url(../image/escudo.png) no-repeat;
+    background-position: center;
+    background-size: 75%;
+    cursor: pointer;
+}
+
+.blanco{
+    height: 170px;
+    cursor: pointer;
+}
+
+
+.borde_bandera{
+    border-color: black;
+    border-radius: 1px;
+    border-style: solid;
+}
