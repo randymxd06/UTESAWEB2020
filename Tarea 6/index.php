@@ -21,6 +21,7 @@
             <div class="col col-md-2" onclick="window.location='blanco.php'"></div>
             <div class="col col-md-5 bg-primary color borde_bandera" onclick="window.location='azul.php'"></div>
         </div>
+        
     </div>
 
 <?php include_once "partes/parte_footer.php" ?>
