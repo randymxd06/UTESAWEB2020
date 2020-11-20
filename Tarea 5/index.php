@@ -11,7 +11,7 @@ file_put_contents("datos/{$t}.dat", $info);
 <html>
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
-<title>Tarea 4</title>
+<title>Página Principal</title>
 </head>
 
 <body>
