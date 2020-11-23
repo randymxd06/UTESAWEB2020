@@ -1,8 +1,8 @@
 <?php include_once "partes/parte_head.php" ?>
 
-<div class="container mt-1">
-    <h1 style="text-align: center; background: darkgray"><p class="animate__fadeIn animate__animated animate__fast animate__delay-1s"><span style="color: rgb(66, 115, 184)">Bande</span><span style="color: white">ra Domi</span><span style="color: rgb(230, 46, 0)">nicana</span></p></h1>
-</div>
+    <div class="container mt-1">
+        <h1 style="text-align: center; background: darkgray"><p class="animate__fadeIn animate__animated animate__fast animate__delay-1s"><span style="color: rgb(66, 115, 184)">Bande</span><span style="color: white">ra Domi</span><span style="color: rgb(230, 46, 0)">nicana</span></p></h1>
+    </div>
 
     <div class="container borde_bandera animate__fadeInDown animate__animated">
 

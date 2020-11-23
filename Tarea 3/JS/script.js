@@ -1,6 +1,7 @@
+//Declaro un vector//
 var datos = [];
-var bandera;
 
+//Funcion para guardar los datos digitados//
 function guardarDatos(){
 
     /*
@@ -19,23 +20,28 @@ function guardarDatos(){
     persona.carrera = document.getElementById('carrera').value;
     persona.sexo = document.getElementById('sexo').value;
     persona.color = document.getElementById('color').value;
+
     if(persona.matricula != "" && persona.nombre != "" && persona.apellido != "" && persona.carrera != "" && persona.sexo != "" && persona.color != ""){
         datos.push(persona);
         localStorage.setItem('datos', JSON.stringify(datos));
         mostrarDatos();
     }
     
-}
+};//Fin de la funcion//
 
+//Funcion para limpiar los campos//
 function limpiar(){
+
     matricula = document.getElementById('matricula').value = "";
     nombre = document.getElementById('nombre').value = "";
     apellido = document.getElementById('apellido').value = "";
     carrera = document.getElementById('carrera').value = "";
     sexo = document.getElementById('sexo').value = "";
     color = document.getElementById('color').value = "";
-};
 
+};//Fin de la funcion//
+
+//Funcion para mostrar los datos registrados en la tabla//
 function mostrarDatos(){
 
     dest = document.getElementById('tbDatos');
@@ -52,16 +58,21 @@ function mostrarDatos(){
     dest.appendChild(tr);
     }
 
-}
+};//Fin de la funcion//
 
+//Declaro una variable para darle el valor del boton guardar//
 let btnGuardar = document.getElementById('btnGuardar');
 
+//Funcion del boton guardar a la hora de hacer click//
 btnGuardar.addEventListener('click', function(){
+
     validar();
     guardarDatos();
     limpiar(); 
+    
 });
 
+//Funcion para validar los campos//
 function validar(){
 
     //Validacion de la matricula
@@ -166,13 +177,16 @@ function validar(){
         color = document.getElementById('spanColor').textContent = "Porfavor llenar este campo";
     }
 
-}
+};//Fin de la funcion//
 
+//Funcion para que los datos registrados no se pierdan al recargar la pagina//
 function cargarDatos(){
+
     tmp = localStorage.getItem('datos');
     if(tmp != null){
         datos = JSON.parse(tmp);
         mostrarDatos();
     }
-}
+
+};//fin de la funcion//
     
